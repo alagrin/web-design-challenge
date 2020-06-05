@@ -1,7 +1,3 @@
-function animate() {
-    // func body
-}
-
-function something() {
-    //func body
+function sayThanks() {
+    alert("Thanks, your response has been submitted!");
 }

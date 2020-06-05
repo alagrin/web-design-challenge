@@ -8,10 +8,8 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-body {
-}
-
-header {
+h1 {
+  font-weight: 600;
 }
 
 nav {
@@ -21,7 +19,11 @@ nav {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  background-color: #7E7E81;
+  background-color: #7e7e81;
+  background: linear-gradient(
+    rgba(179, 177, 177, 0.5),
+    rgba(145, 141, 141, 0.5)
+  );
   justify-content: space-between;
   height: 67px;
 }
@@ -67,7 +69,7 @@ li {
 
 nav li.nav-link a {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   text-decoration: none;
   color: white;
 }
@@ -76,12 +78,8 @@ nav li.nav-link a {
   color: #c2d745;
 }
 
-body {
-
-}
-
 .wrapper {
-  
+  width: 100%;
 }
 
 .intro-leadgen {
@@ -91,6 +89,7 @@ body {
 }
 
 .main-text {
+  line-height: 1.5em;
 }
 
 .main-text p {
@@ -100,23 +99,64 @@ body {
 
 .target-align {
   outline: solid red 2px;
-  padding: 10em 10em;
-  height: 80vh;
+  padding: 5em 10em;
+  height: 60vh;
+  width: 100%;
 }
 
 .target-align .section-text {
-    text-align: left;
-    width: 50%;
-    float: left;
-    line-height: 1.5em;
+  text-align: left;
+  width: 50%;
+  float: left;
+  line-height: 1.5em;
+}
+
+.section-text h2 {
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .section-text p {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
-.first-image {
-    float: right;
+.target-align-set {
+  float: right;
+  position: relative;
+  padding: 50px 50px;
+  outline: 2px red solid;
+}
+/* Target alignment images */
+.target-page {
+  position: relative;
+  width: 275px;
+  height: auto;
+  z-index: -1;
+}
+
+.target-people {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+  right: 55px;
+  bottom: 35px;
+}
+
+.target-checklist {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.target-servers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75px;
+  height: auto;
 }
 
 .campaign-setup {
@@ -125,16 +165,36 @@ body {
   height: 80vh;
 }
 
-.campaign-setup .section-text {
-    width: 50%;
-    float: right;
-    padding: 0 1.5em;
-    line-height: 1.5em;
+.campaign-set {
+  float: left;
+  position: relative;
+  padding: 50px 50px;
+  outline: 2px red solid;
 }
 
-.second-image {
-    float: left;
-    width: 50%;
+.campaign-setup .section-text {
+  width: 50%;
+  float: right;
+  padding: 0 1.5em;
+  line-height: 1.5em;
+}
+/* Campaign Setup images */
+.b2b-1 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.b2b-2 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.b2b-3 {
+  width: 100px;
+  height: auto;
+  position: relative;
 }
 
 .content-syndication {
@@ -144,15 +204,34 @@ body {
 }
 
 .content-syndication .section-text {
-    text-align: left;
-    width: 50%;
-    float: left;
-    line-height: 1.5em;
+  text-align: left;
+  width: 50%;
+  float: left;
+  line-height: 1.5em;
 }
 
-.third-image {
-    float: right;
-    /* width: 50%; */
+.content-synd-set {
+  float: right;
+  outline: solid red 2px;
+  /* width: 50%; */
+}
+
+.synd-points {
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+.synd-message {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.synd-map {
+  width: 300px;
+  height: auto;
+  position: relative;
 }
 
 .data-qa {
@@ -162,15 +241,40 @@ body {
 }
 
 .data-qa .section-text {
-    float: right;
-    text-align: left;
-    line-height: 1.5em;
-    width: 50%;
+  float: right;
+  text-align: left;
+  line-height: 1.5em;
+  width: 50%;
 }
 
-.fourth-image {
-    float: left;
-    width: 50%;
+.data-qa-set {
+  outline: solid red 2px;
+  float: left;
+  width: 50%;
+}
+
+.qa-20 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.qa-21 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.qa-22 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+
+.qa-23 {
+  width: 100px;
+  height: auto;
+  position: relative;
 }
 
 .lead-delivery {
@@ -180,38 +284,194 @@ body {
 }
 
 .lead-delivery .section-text {
-    float: left;
-    width: 50%;
-    text-align: left;
-    line-height: 1.5em;
+  float: left;
+  width: 50%;
+  text-align: left;
+  line-height: 1.5em;
 }
 
-.fifth-image {
-    float: right;
+.lead-set {
+  float: right;
+  outline: solid red 2px;
+}
+
+/* Lead Delivery images */
+
+.lead-1 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+.lead-2 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+.lead-3 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+.lead-4 {
+  width: 100px;
+  height: auto;
+  position: relative;
+}
+.lead-5 {
+  width: 100px;
+  height: auto;
+  position: relative;
 }
 
 .contact {
-  outline: solid red 2px;
-  padding: 10em 10em;
+  padding: 5em 10em;
   height: 80vh;
+  text-align: center;
+  background-image: url("../assets/FORM\ BACKGROUND\ IMAGE_SUBWAY\ FULL\ IMAGE.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.contact-form input,
+select {
+  margin-top: 20px;
+  background: linear-gradient(
+    rgba(201, 199, 199, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+.contact-form input,
+#region-dropdown {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 2.75rem;
+  border: 1px solid white;
+  border-radius: 10px;
   text-align: center;
 }
 
-.contact {
-    background-image: url("../assets/FORM\ BACKGROUND\ IMAGE_SUBWAY\ FULL\ IMAGE.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+::placeholder,
+select {
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  text-align-last: center;
+  color: transparent;
+}
+
+select > option {
+  -webkit-user-select: none;
+  text-align: center !important;
+}
+
+#region-dropdown::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
 }
 
 .contact-text {
-    color: white;
+  color: white;
 }
 
-.contact form {
-    padding: 0 10%;
+.contact-text p {
+  margin-top: 5%;
+  width: 50%;
 }
+
+#contact-btn {
+  font-family: Montserrat;
+  font-size: medium;
+  margin-top: 3rem;
+  padding: 10px;
+  width: 35%;
+  background-color: #9ac1ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact-btn:hover {
+  background-color: #316ef5;
+}
+
+/* .is-visible {
+  visibility: visible;
+} */
 
 footer {
-  outline: solid red 2px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 20vh;
+}
+
+.bottom-links {
+  margin: 0 5%;
+}
+
+footer .vertical-links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.vertical-links li,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.vertical-links a:hover {
+  color: blue;
+}
+
+footer .contact-details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 0 5rem;
+  margin-right: 0;
+  font-size: 14px;
+  align-self: center;
+}
+
+.contact-details p {
+  margin-right: 0;
+}
+
+#bottom-logo {
+  width: 150px;
+  height: auto;
+  margin: 0 40px;
+}
+
+#main-link:hover {
+  color: blue;
 }

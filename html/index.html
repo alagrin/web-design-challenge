@@ -32,7 +32,7 @@
     <div class="wrapper">
         <div class="intro-leadgen">
             <div class="main-text">
-                <h2>DIGITAL LEAD GENERATION PROCESS</h2>
+                <h3>DIGITAL LEAD GENERATION PROCESS</h3>
                 <p>For nearly a decade, the top brands in tech have turned to SSG to meet their lead generation needs.
                     By
                     using
@@ -57,8 +57,12 @@
                 <p>We source a data set for your program from our proprietary database of 165M+ B2B records that matches
                     your ABM list and/or target parameters</p>
             </div>
-            <div class="first-image">
-                <img src="#" alt="some image">
+            <div class="target-align-set">
+                <img class="target-checklist" src="../assets/PNG/Asset 2BC.png" alt="checklist">
+                <img class="target-people" src="../assets/PNG/Asset 4BC.png" alt="people">
+                <img class="target-page" src="../assets/PNG/Asset 5BC.png" alt="webpage">
+                <img class="target-servers" src="../assets/PNG/Asset 6BC.png" alt="servers">
+
             </div>
         </div>
 
@@ -70,8 +74,10 @@
                     per
                     campaign segment</p>
             </div>
-            <div class="second-image">
-                <img src="#" alt="some image">
+            <div class="campaign-set">
+                <img class="b2b-1" src="../assets/PNG/Asset 9BC.png" alt="medium page">
+                <img class="b2b-2" src="../assets/PNG/Asset 10BC.png" alt="compact page">
+                <img class="b2b-3" src="../assets/PNG/Asset 11BC.png" alt="full page">
             </div>
         </div>
 
@@ -82,8 +88,10 @@
                     properties,
                     and capture impressions and clicks </p>
             </div>
-            <div class="third-image">
-                <img src="#" alt="some image">
+            <div class="content-synd-set">
+                <img class="synd-points" src="../assets/PNG/Asset 63BC.png" alt="points">
+                <img class="synd-message" src="../assets/PNG/Asset 64BC.png" alt="message">
+                <img class="synd-map" src="../assets/PNG/Asset 66BC.png" alt="map">
             </div>
         </div>
 
@@ -94,8 +102,11 @@
                     firmographic,
                     engagement, and intent columns</p>
             </div>
-            <div class="fourth-image">
-                <img src="#" alt="some image">
+            <div class="data-qa-set">
+                <img class="qa-20" src="../assets/PNG/Asset 20BC.png" alt="">
+                <img class="qa-21" src="../assets/PNG/Asset 21BC.png" alt="">
+                <img class="qa-22" src="../assets/PNG/Asset 22BC.png" alt="">
+                <img class="qa-23" src="../assets/PNG/Asset 23BC.png" alt="">
             </div>
         </div>
 
@@ -106,8 +117,12 @@
                     be
                     uploaded straight to your marketing automation and/or CRM platforms</p>
             </div>
-            <div class="fifth-image">
-                <img src="#" alt="some image">
+            <div class="lead-set">
+                <img class="lead-1" src="../assets/PNG/Asset 30BC.png" alt="">
+                <img class="lead-2" src="../assets/PNG/Asset 31BC.png" alt="">
+                <img class="lead-3" src="../assets/PNG/Asset 32BC.png" alt="">
+                <img class="lead-4" src="../assets/PNG/Asset 33BC.png" alt="">
+                <img class="lead-5" src="../assets/PNG/Asset 34BC.png" alt="">
             </div>
         </div>
 
@@ -116,27 +131,29 @@
                 <h2>START GENERATING RELEVANT B2B DEMAND TODAY</h2>
                 <p>Submit the form below and we'll have a local rep reach
                     out to provide a target audience match</p>
-                <!-- might be h3 instead of p for style -->
             </div>
             <form class="contact-form" action="#">
                 <input type="text" name="name" id="inp-name" placeholder="NAME" />
                 <input type="email" name="email" id="inp-email" placeholder="WORK EMAIL" />
-                <select name="regions" id="region-dropdown" title="REGION">
-                    <!-- display Region arrow down as visible label -->
+
+                <select name="regions" id="region-dropdown" title="REGION" name="region">
+                    <option id="reg">REGION</option>
                     <option value="AFRICA">AFRICA</option>
                     <option value="APAC">APAC</option>
                     <option value="EUROPE">EUROPE</option>
                     <option value="LATAM">LATAM</option>
                     <option value="NORAM">NORAM</option>
                 </select>
-                <button type="submit">Submit</button>
+
+                <button id="contact-btn" type="submit" onclick="sayThanks()">SUBMIT</button>
+                <!-- <div id="form-response">Thanks for your submission!</div> -->
             </form>
         </div>
     </div>
     <footer class="footer">
         <div class="bottom-links">
-            <img src="#" alt="logo grey">
-            <ul class="vertial-links">
+            <img id="bottom-logo" src="../assets/SVG/Asset 1.svg" alt="logo grey">
+            <ul class="vertical-links">
                 <li><a href="/">DEMO</a></li>
                 <li><a href="/">PRIVACY POLICY</a></li>
                 <li><a href="/">DEMANDCENTR</a></li>
@@ -147,7 +164,7 @@
             <p>&copy; Selling Simplified Group, Inc. 2020 | All Rights Reserved</p>
             <p>7400 E Orchard Rd, Suite 350S</p>
             <p>Greenwood Village, CO 80111</p>
-            <p>1 720 638-8500 | <a href="Sellingsimplified.com">Sellingsimplified.com</a></p>
+            <p>1 720 638-8500 | <a id="main-link" href="Sellingsimplified.com">Sellingsimplified.com</a></p>
         </div>
     </footer>
 
