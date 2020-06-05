@@ -13,15 +13,15 @@
 <body>
 
     <header class="container">
-        <nav class="site-nav">
+        <nav id="navbar" class="site-nav">
             <div class="logo">
                 <img class="logo-image" src="../assets/selling_simpl_logo.svg" alt="logo">
             </div>
             <ul class="nav-link-list">
-                <li class="nav-link"><a href="/">HOME</a></li>
-                <li class="nav-link"><a href="/">ABOUT</a></li>
-                <li class="nav-link"><a href="/">DEMANDCENTR</a></li>
-                <li class="nav-link"><a href="/">RESOURCES</a></li>
+                <li class="nav-link"><a href="#">HOME</a></li>
+                <li class="nav-link"><a href="#">ABOUT</a></li>
+                <li class="nav-link"><a href="#">DEMANDCENTR</a></li>
+                <li class="nav-link"><a href="#">RESOURCES</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -103,10 +103,10 @@
                     engagement, and intent columns</p>
             </div>
             <div class="data-qa-set">
-                <img class="qa-20" src="../assets/PNG/Asset 20BC.png" alt="">
-                <img class="qa-21" src="../assets/PNG/Asset 21BC.png" alt="">
-                <img class="qa-22" src="../assets/PNG/Asset 22BC.png" alt="">
-                <img class="qa-23" src="../assets/PNG/Asset 23BC.png" alt="">
+                <img class="qa-20" src="../assets/PNG/Asset 20BC.png" alt="cols">
+                <img class="qa-21" src="../assets/PNG/Asset 21BC.png" alt="ribbon">
+                <img class="qa-22" src="../assets/PNG/Asset 22BC.png" alt="empty">
+                <img class="qa-23" src="../assets/PNG/Asset 23BC.png" alt="photo">
             </div>
         </div>
 
@@ -168,6 +168,18 @@
         </div>
     </footer>
 
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-120px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
