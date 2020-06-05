@@ -1,0 +1,217 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+}
+
+header {
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: #7E7E81;
+  justify-content: space-between;
+  height: 67px;
+}
+
+.logo {
+  align-self: center;
+  margin-left: 0.75em;
+  width: 20%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-image {
+  width: 100%;
+  height: 60vh;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+ul.nav-link-list {
+  margin-right: 1.75em;
+  float: right;
+  align-self: flex-end;
+  align-self: center;
+}
+
+nav ul li {
+  margin-left: 2.5em;
+  align-self: flex-end;
+}
+
+li {
+  display: inline-block;
+}
+
+nav li.nav-link a {
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link a:hover {
+  color: #c2d745;
+}
+
+body {
+
+}
+
+.wrapper {
+  
+}
+
+.intro-leadgen {
+  padding: 5em 10em;
+  height: 50vh;
+  background-color: #f8f8f8;
+}
+
+.main-text {
+}
+
+.main-text p {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.target-align {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+}
+
+.target-align .section-text {
+    text-align: left;
+    width: 50%;
+    float: left;
+    line-height: 1.5em;
+}
+
+.section-text p {
+    margin-top: 1.5em;
+}
+
+.first-image {
+    float: right;
+}
+
+.campaign-setup {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+}
+
+.campaign-setup .section-text {
+    width: 50%;
+    float: right;
+    padding: 0 1.5em;
+    line-height: 1.5em;
+}
+
+.second-image {
+    float: left;
+    width: 50%;
+}
+
+.content-syndication {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+}
+
+.content-syndication .section-text {
+    text-align: left;
+    width: 50%;
+    float: left;
+    line-height: 1.5em;
+}
+
+.third-image {
+    float: right;
+    /* width: 50%; */
+}
+
+.data-qa {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+}
+
+.data-qa .section-text {
+    float: right;
+    text-align: left;
+    line-height: 1.5em;
+    width: 50%;
+}
+
+.fourth-image {
+    float: left;
+    width: 50%;
+}
+
+.lead-delivery {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+}
+
+.lead-delivery .section-text {
+    float: left;
+    width: 50%;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.fifth-image {
+    float: right;
+}
+
+.contact {
+  outline: solid red 2px;
+  padding: 10em 10em;
+  height: 80vh;
+  text-align: center;
+}
+
+.contact {
+    background-image: url("../assets/FORM\ BACKGROUND\ IMAGE_SUBWAY\ FULL\ IMAGE.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-text {
+    color: white;
+}
+
+.contact form {
+    padding: 0 10%;
+}
+
+footer {
+  outline: solid red 2px;
+}
